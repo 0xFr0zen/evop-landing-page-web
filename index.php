@@ -52,7 +52,7 @@ $strings = array(
                 <button class="mdc-button" id="teambutton">Team</button>
             </div>
         </div>
-        <div id="content">
+        <div id="content" class="full">
             <div id="landingpage">
                 <div id="inner">
                     <div id="title">
