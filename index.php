@@ -65,21 +65,23 @@ $strings = array(
                     </div>
                     <div id="ideas">
                         <div class="row">
-                            <label for="ideas" class="title"><?php echo $strings['ideas']['title'];?></label>
-                            <span class="subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
+                            <div class="box">
+                                <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
+                                <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
+                            </div>
                         </div>
                         <div class="row">
                             <?php
                             foreach($strings['ideas']['values'] as $ideaK => $idea){
                                 ?>
                                 <div class="box">
-                                    <div d-c="<?php echo $ideaK;?>" id="counter">
-                                    <label for="ideas" id="title"><?php echo $idea['title'];?></label>
-                                    <span class="subtitle"><?php echo $idea['subtitle'];?></span>
+                                    <div d-c="<?php echo $ideaK;?>" class="counter"></div>
+                                    <label for="ideas" class="box-title"><?php echo $idea['title'];?></label>
+                                    <span class="box-subtitle"><?php echo $idea['subtitle'];?></span>
                                     <?php
                                     if($idea['more'] != null) {
                                         ?>
-                                        <a class="morelink" href="<?php echo $idea['more'];?>">MORE</a>
+                                        <a class="box-morelink" href="<?php echo $idea['more'];?>">MORE</a>
                                         <?php
                                     }
                                     ?>
