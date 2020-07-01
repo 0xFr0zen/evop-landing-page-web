@@ -39,6 +39,7 @@ $strings = array(
 </head>
 <body>
     <div id="app">
+        <div id="content">
         <div id="landingpageheader">
             <div id="left">
                 <div id="logo">
@@ -52,7 +53,6 @@ $strings = array(
                 <button id="teambutton">Team</button>
             </div>
         </div>
-        <div id="content">
             <div id="landingpage">
                 <div id="inner">
                     <div id="title">
