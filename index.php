@@ -46,10 +46,10 @@ $strings = array(
                 </div>
             </div>
             <div id="right">
-                <button id="aboutbutton">About</button>
-                <button id="featuresbutton">Features</button>
-                <button id="pricesbutton">Prices</button>
-                <button id="teambutton">Team</button>
+                <button class="mdc-button" id="aboutbutton">About</button>
+                <button class="mdc-button" id="featuresbutton">Features</button>
+                <button class="mdc-button" id="pricesbutton">Prices</button>
+                <button class="mdc-button" id="teambutton">Team</button>
             </div>
         </div>
         <div id="content">
