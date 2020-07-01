@@ -64,13 +64,13 @@ $strings = array(
                         <img src="https://api.ev-op.de/image/devices" alt="devices"/>
                     </div>
                     <div id="ideas">
-                        <div class="row">
+                        <div class="column">
                             <div class="box">
                                 <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
                                 <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="column">
                             <?php
                             foreach($strings['ideas']['values'] as $ideaK => $idea){
                                 ?>
