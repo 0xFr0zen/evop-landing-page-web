@@ -80,11 +80,11 @@ $strings = array(
                                 <div class="box">
                                     <div d-c="1" class="counter"></div>
                                     <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][0]['title'];?></label>
-                                    <span class="box-subtitle"><?php $strings['ideas']['values'][0]['subtitle'];?></span>
+                                    <span class="box-subtitle"><?php echo $strings['ideas']['values'][0]['subtitle'];?></span>
                                     <?php 
                                     if($strings['ideas']['values'][0]['more'] != null){
                                         ?>
-                                        <a class="box-morelink" href="<?php $strings['ideas']['values'][0]['more'];?>">MORE</a>
+                                        <a class="box-morelink" href="<?php echo $strings['ideas']['values'][0]['more'];?>">MORE</a>
                                         <?php
                                     }
                                     ?>
