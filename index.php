@@ -8,7 +8,7 @@ include_once __DIR__.'/../essentials/header.php';
 $strings = array(
     "main-title" => array(
         "title" => "The best app for your shop & customers",
-        "subtitle" => "",
+        "subtitle" => "Scroll to check us out!",
     ),
     "ideas" => array(
         "title" => "What you can benefit from our app",
@@ -58,6 +58,11 @@ $strings = array(
                     <div id="title">
                     <?php 
                     echo $strings['main-title']['title'];
+                    ?>
+                    </div>
+                    <div id="subtitle">
+                    <?php 
+                    echo $strings['main-title']['subtitle'];
                     ?>
                     </div>
                     <div id="devices">
