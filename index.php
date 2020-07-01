@@ -7,7 +7,7 @@ include_once __DIR__.'/../essentials/header.php';
 
 $strings = array(
     "main-title" => array(
-        "title" => "The best app for your customers",
+        "title" => "The best app for your shop & customers",
         "subtitle" => "",
     ),
     "ideas" => array(
