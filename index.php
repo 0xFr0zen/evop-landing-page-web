@@ -73,7 +73,7 @@ $strings = array(
                             </div>
                             <div class="column">
                                 <?php
-                                    for($i = 0; $i < floor(sizeof($strings['ideas']['values']) / 2); $i += 2){
+                                    for($i = 0; $i < floor(sizeof($strings['ideas']['values']) / 2); $i++){
                                     ?>
                                     <div class="row">
                                     <?php 
