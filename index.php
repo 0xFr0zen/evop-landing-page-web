@@ -60,11 +60,6 @@ $strings = array(
                     echo $strings['main-title']['title'];
                     ?>
                     </div>
-                    <div id="subtitle">
-                    <?php 
-                    echo $strings['main-title']['subtitle'];
-                    ?>
-                    </div>
                     <div id="devices">
                         <img src="https://api.ev-op.de/image/devices" alt="devices"/>
                     </div>
