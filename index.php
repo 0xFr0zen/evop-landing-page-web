@@ -82,7 +82,7 @@ $strings = array(
                                         for($j = 0;$j < 2;$j++){
                                             ?>
                                             <div class="box">
-                                                <div d-c="<?php echo $c;?>" class="counter"></div>
+                                                <div d-c="<?php echo $c+1;?>" class="counter"></div>
                                                 <label class="box-title s-middle"><?php echo $strings['ideas']['values'][$c]['title'];?></label>
                                                 <span class="box-subtitle"><?php echo $strings['ideas']['values'][$c]['subtitle'];?></span>
                                                 <?php 
