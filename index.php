@@ -73,21 +73,24 @@ $strings = array(
                             </div>
                             <div class="column">
                                 <?php
+                                $c = 0;
                                     for($i = 0; $i < floor(sizeof($strings['ideas']['values']) / 2); $i++){
+                                        ;
                                     ?>
                                     <div class="row">
                                     <?php 
                                         for($j = 0;$j < 2;$j++){
+                                            $c++;
                                             ?>
                                             <div class="box">
-                                                <div d-c="<?php echo $i+$j;?>" class="counter"></div>
-                                                <label class="box-title s-middle"><?php echo $strings['ideas']['values'][$i+$j]['title'];?></label>
-                                                <span class="box-subtitle"><?php echo $strings['ideas']['values'][$i+$j]['subtitle'];?></span>
+                                                <div d-c="<?php echo $c;?>" class="counter"></div>
+                                                <label class="box-title s-middle"><?php echo $strings['ideas']['values'][$c]['title'];?></label>
+                                                <span class="box-subtitle"><?php echo $strings['ideas']['values'][$c]['subtitle'];?></span>
                                                 <?php 
-                                                if($strings['ideas']['values'][$i+$j]['more'] != null){
+                                                if($strings['ideas']['values'][$c]['more'] != null){
                                                     ?>
                                                     <div class="box-morelink">
-                                                        <a href="<?php echo $strings['ideas']['values'][$i+$j]['more'];?>">MORE</a>
+                                                        <a href="<?php echo $strings['ideas']['values'][$c]['more'];?>">MORE</a>
                                                     </div>
                                                     <?php
                                                 }
