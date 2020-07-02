@@ -66,7 +66,7 @@ $strings = array(
                     <div id="ideas">
                         <div id="ideasinner">
                             <div class="column">
-                                <div class="box explain">
+                                <div class="explain">
                                     <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
                                 </div>
