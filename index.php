@@ -70,8 +70,8 @@ $strings = array(
                     </div>
                     <div id="ideas">
                         <div id="ideasinner">
-                            <div class="row explain">
-                                <div class="box">
+                            <div class="row">
+                                <div class="box explain">
                                     <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
                                 </div>
