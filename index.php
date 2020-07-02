@@ -1,6 +1,6 @@
 <?php
 function createIdeaBox(string $title, string $subtitle, string $moreLink = null){
-    return array("title" => $title, "subtitle" => $subtitle, "more" => null);
+    return array("title" => $title, "subtitle" => $subtitle, "more" => $moreLink);
 }
 
 include_once __DIR__.'/../essentials/header.php';
@@ -67,7 +67,7 @@ $strings = array(
                         <div id="ideasinner">
                             <div class="column">
                                 <div class="explain">
-                                    <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
+                                    <label class="box-title"><?php echo $strings['ideas']['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ $strings = array(
                                 <div class="row">
                                     <div class="box">
                                         <div d-c="1" class="counter"></div>
-                                        <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][0]['title'];?></label>
+                                        <label class="box-title s-middle"><?php echo $strings['ideas']['values'][0]['title'];?></label>
                                         <span class="box-subtitle"><?php echo $strings['ideas']['values'][0]['subtitle'];?></span>
                                         <?php 
                                         if($strings['ideas']['values'][0]['more'] != null){
@@ -87,7 +87,7 @@ $strings = array(
                                     </div>
                                     <div class="box">
                                         <div d-c="2" class="counter"></div>
-                                        <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][1]['title'];?></label>
+                                        <label class="box-title s-middle"><?php echo $strings['ideas']['values'][1]['title'];?></label>
                                         <span class="box-subtitle"><?php echo $strings['ideas']['values'][1]['subtitle'];?></span>
                                         <?php 
                                         if($strings['ideas']['values'][1]['more'] != null){
@@ -101,7 +101,7 @@ $strings = array(
                                 <div class="row">
                                 <div class="box">
                                     <div d-c="3" class="counter"></div>
-                                    <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][2]['title'];?></label>
+                                    <label class="box-title s-middle"><?php echo $strings['ideas']['values'][2]['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['values'][2]['subtitle'];?></span>
                                     <?php 
                                     if($strings['ideas']['values'][2]['more'] != null){
@@ -113,7 +113,7 @@ $strings = array(
                                 </div>
                                 <div class="box">
                                     <div d-c="4" class="counter"></div>
-                                    <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][3]['title'];?></label>
+                                    <label class="box-title s-middle"><?php echo $strings['ideas']['values'][3]['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['values'][3]['subtitle'];?></span>
                                     <?php 
                                     if($strings['ideas']['values'][3]['more'] != null){
