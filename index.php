@@ -65,25 +65,40 @@ $strings = array(
                     </div>
                     <div id="ideas">
                         <div id="ideasinner">
-                            <div class="row">
+                            <div class="column">
                                 <div class="box explain">
                                     <label for="ideas" class="box-title"><?php echo $strings['ideas']['title'];?></label>
                                     <span class="box-subtitle"><?php echo $strings['ideas']['subtitle'];?></span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="box">
-                                    <div d-c="1" class="counter"></div>
-                                    <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][0]['title'];?></label>
-                                    <span class="box-subtitle"><?php echo $strings['ideas']['values'][0]['subtitle'];?></span>
-                                    <?php 
-                                    if($strings['ideas']['values'][0]['more'] != null){
+                            <div class="column">
+                                <div class="row">
+                                    <div class="box">
+                                        <div d-c="1" class="counter"></div>
+                                        <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][0]['title'];?></label>
+                                        <span class="box-subtitle"><?php echo $strings['ideas']['values'][0]['subtitle'];?></span>
+                                        <?php 
+                                        if($strings['ideas']['values'][0]['more'] != null){
+                                            ?>
+                                            <a class="box-morelink" href="<?php echo $strings['ideas']['values'][0]['more'];?>">MORE</a>
+                                            <?php
+                                        }
                                         ?>
-                                        <a class="box-morelink" href="<?php echo $strings['ideas']['values'][0]['more'];?>">MORE</a>
-                                        <?php
-                                    }
-                                    ?>
+                                    </div>
+                                    <div class="box">
+                                        <div d-c="2" class="counter"></div>
+                                        <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][1]['title'];?></label>
+                                        <span class="box-subtitle"><?php echo $strings['ideas']['values'][1]['subtitle'];?></span>
+                                        <?php 
+                                        if($strings['ideas']['values'][1]['more'] != null){
+                                            ?>
+                                            <a class="box-morelink" href="<?php echo $strings['ideas']['values'][1]['more'];?>">MORE</a>
+                                            <?php
+                                        }
+                                        ?>
+                                    </div>
                                 </div>
+                                <div class="row">
                                 <div class="box">
                                     <div d-c="3" class="counter"></div>
                                     <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][2]['title'];?></label>
@@ -92,20 +107,6 @@ $strings = array(
                                     if($strings['ideas']['values'][2]['more'] != null){
                                         ?>
                                         <a class="box-morelink" href="<?php echo $strings['ideas']['values'][2]['more'];?>">MORE</a>
-                                        <?php
-                                    }
-                                    ?>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="box">
-                                    <div d-c="2" class="counter"></div>
-                                    <label for="ideas" class="box-title"><?php echo $strings['ideas']['values'][1]['title'];?></label>
-                                    <span class="box-subtitle"><?php echo $strings['ideas']['values'][1]['subtitle'];?></span>
-                                    <?php 
-                                    if($strings['ideas']['values'][1]['more'] != null){
-                                        ?>
-                                        <a class="box-morelink" href="<?php echo $strings['ideas']['values'][1]['more'];?>">MORE</a>
                                         <?php
                                     }
                                     ?>
@@ -122,6 +123,10 @@ $strings = array(
                                     }
                                     ?>
                                 </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                
                             </div>
                         </div>
                     </div>
