@@ -80,7 +80,6 @@ $strings = array(
                                     <div class="row">
                                     <?php 
                                         for($j = 0;$j < 2;$j++){
-                                            $c++;
                                             ?>
                                             <div class="box">
                                                 <div d-c="<?php echo $c;?>" class="counter"></div>
@@ -97,6 +96,7 @@ $strings = array(
                                                 ?>
                                             </div>
                                             <?php
+                                            $c++;
                                         }
                                     }
                                 ?>
