@@ -125,9 +125,6 @@ $strings = array(
                                 </div>
                                 </div>
                             </div>
-                            <div class="column">
-                                
-                            </div>
                         </div>
                     </div>
                 </div>
