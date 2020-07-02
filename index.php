@@ -77,27 +77,30 @@ $strings = array(
                                     for($i = 0; $i < floor(sizeof($strings['ideas']['values']) / 2); $i++){
                                         ;
                                     ?>
-                                    <div class="row">
-                                    <?php 
-                                        for($j = 0;$j < 2;$j++){
-                                            ?>
-                                            <div class="box">
-                                                <div d-c="<?php echo $c+1;?>" class="counter"></div>
-                                                <label class="box-title s-middle"><?php echo $strings['ideas']['values'][$c]['title'];?></label>
-                                                <span class="box-subtitle"><?php echo $strings['ideas']['values'][$c]['subtitle'];?></span>
-                                                <?php 
-                                                if($strings['ideas']['values'][$c]['more'] != null){
+                                        <div class="row">
+                                            <?php 
+                                                for($j = 0;$j < 2;$j++){
                                                     ?>
-                                                    <div class="box-morelink">
-                                                        <a href="<?php echo $strings['ideas']['values'][$c]['more'];?>">MORE</a>
+                                                    <div class="box">
+                                                        <div d-c="<?php echo $c+1;?>" class="counter"></div>
+                                                        <label class="box-title s-middle"><?php echo $strings['ideas']['values'][$c]['title'];?></label>
+                                                        <span class="box-subtitle"><?php echo $strings['ideas']['values'][$c]['subtitle'];?></span>
+                                                        <?php 
+                                                        if($strings['ideas']['values'][$c]['more'] != null){
+                                                            ?>
+                                                            <div class="box-morelink">
+                                                                <a href="<?php echo $strings['ideas']['values'][$c]['more'];?>">MORE</a>
+                                                            </div>
+                                                            <?php
+                                                        }
+                                                        ?>
                                                     </div>
                                                     <?php
+                                                    $c++;
                                                 }
-                                                ?>
-                                            </div>
-                                            <?php
-                                            $c++;
-                                        }
+                                            ?>
+                                        </div>
+                                        <?php
                                     }
                                 ?>
                             </div>
