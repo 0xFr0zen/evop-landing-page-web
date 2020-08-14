@@ -32,7 +32,7 @@ $strings = array(
     <?php
     _header("",
         array("name" => "landingpage", "type" => "js"),
-        array("name" => "landingpage", "type" => "css")
+        array("name" => "main", "type" => "css")
     );
 
     ?>
